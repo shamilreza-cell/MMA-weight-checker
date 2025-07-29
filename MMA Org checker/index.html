@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>MMA Weight Class Checker</title>
+        <link rel="stylesheet" href="mma.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>MMA Weight Class Checker</h1>
+
+            <label for="org">Choose You Organization</label>
+            <select id="org">
+                <option value="ufc">UFC</option>
+                <option value="one">ONE Championship</option>
+                <option value="bellator">Bellator</option>
+            </select><br>
+            
+            <label for="weight">Enter your Weight(<span id="unit-label">kg</span>):</label>
+            <input type="number" id="weight" placeholder="Enter Your Weight" />
+
+            <button id="toggle">Switch Weight to lb</button>
+            <button onclick="checkClass()">Check Class</button>
+            <div id="result"></div>
+        </div>
+
+        <script src="mma.js"></script>
+    </body>
+</html>
